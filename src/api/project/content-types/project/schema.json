@@ -1,0 +1,38 @@
+{
+  "kind": "singleType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "displayName": {
+      "type": "string",
+      "required": true
+    },
+    "useChainName": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "contractAddress": {
+      "type": "string",
+      "regex": "^0x[a-fA-F0-9]{40}$"
+    },
+    "phases": {
+      "type": "component",
+      "repeatable": true,
+      "component": "project.phase"
+    },
+    "contractABI": {
+      "type": "json"
+    }
+  }
+}

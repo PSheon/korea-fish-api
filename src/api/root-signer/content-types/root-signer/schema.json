@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "root_signers",
+  "info": {
+    "singularName": "root-signer",
+    "pluralName": "root-signers",
+    "displayName": "RootSigner"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "address": {
+      "type": "string",
+      "regex": "^0x[a-fA-F0-9]{40}$",
+      "required": true
+    },
+    "privateKey": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
