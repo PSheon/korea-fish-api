@@ -26,11 +26,6 @@
       "type": "string",
       "regex": "^0x[a-fA-F0-9]{40}$"
     },
-    "phases": {
-      "type": "component",
-      "repeatable": true,
-      "component": "project.phase"
-    },
     "contractABI": {
       "type": "json"
     }
